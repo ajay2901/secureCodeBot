@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # Set up the FastAPI server URL
-API_URL = "https://securecodebot.streamlit.app/chat"
+API_URL = "https://securecodebot.onrender.com/chat"
 
 # Streamlit interface
 st.title("Chatbot Application")
