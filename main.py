@@ -51,6 +51,8 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from utils.chatbot_logic import initialize_chatbot
 from fastapi.middleware.cors import CORSMiddleware
+import os
+import uvicorn
 
 app = FastAPI()
 
@@ -86,4 +88,6 @@ def home():
     return {"message": "Chatbot API is running!"}
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.getenv("PORT", 8000))  # Default to 8000 if PORT is not set
+    uvicorn.run(app, host="0.0.0.0", port=port)
+    # app.run(debug=True)
