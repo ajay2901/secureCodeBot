@@ -1,0 +1,11 @@
+pandas
+scikit-learn
+nltk
+torch
+sentence-transformers
+logging
+fastapi
+uvicorn
+numpy
+torch
+pydantic
