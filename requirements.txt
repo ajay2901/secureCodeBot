@@ -2,9 +2,7 @@ pandas
 scikit-learn
 nltk
 sentence-transformers
-logging
 fastapi
 uvicorn
 numpy
-torch
 pydantic
